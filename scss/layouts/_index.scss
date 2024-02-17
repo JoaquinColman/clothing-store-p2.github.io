@@ -1,0 +1,136 @@
+
+/* main index first*/
+.main-home{
+    width: $d-w;;
+    height: 100vh;
+    background-image: url(../assets/images/somethingbg.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px $bg-text-second solid;
+    .main-btn{
+        display: inline-block;
+        color: $bg-text-main;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+        border: solid 2px $bg-text-main;
+        padding: 12px 25px;
+        transition: all .42s ease;
+        &:hover{
+            background-color: $bg-text-second;
+            color: $bg-text-main;
+            border-radius: 15px;
+            border-color: $bg-text-second;
+        }
+    }
+    
+    .down-arrow{
+        position: absolute;
+        top: 90%;
+        right: 5%;
+    }
+    .down-arrow i{
+        font-size: 30px;
+        color: $bg-text-main;
+        border: solid 2px $bg-text-main;
+        border-radius: 50px;
+        padding: 12px 12px;
+        transition: all .42s ease;
+        &:hover{
+            background-color: $bg-text-second;
+            color: $bg-text-main;
+            border-color: $bg-text-second;
+        }
+    }
+    
+    span{
+        color: $bg-text-main;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    h1{
+        color: $bg-text-main;
+        font-size: 70px;
+        font-weight: 600;
+    }
+    p{
+        color: #e0e0e0;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    h1, span, p, a{
+        margin-left: 15px;
+    }
+}
+
+/* main index products*/
+.center-text{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.trending-products{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .prod-container{
+        max-width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid $p-b-color;
+        border-radius: $bd-r-main;
+        cursor: pointer;
+        margin: 15px 0;
+        transition: 0.2s ease;
+         img{
+            max-width: $d-w;;
+            border-radius: 20px;
+        }
+         .des{
+            text-align: start;
+            padding: 10px 0;
+        
+        }
+         .des span{
+            color: #606063;
+        }
+         .des h3{
+            padding-top: 7px;
+            color: $bg-text-second;
+            font-size: 20px;
+            font-weight: 600;
+        }
+         .ratting{
+            font-size: 14px;
+            color: $star-color;
+        }
+         h4{
+            padding-top: 7px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $price-color;
+        }
+        &:hover{
+            box-shadow: $box-ps;
+        }  
+    }
+    
+    
+    
+}
+

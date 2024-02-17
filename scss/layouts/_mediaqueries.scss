@@ -1,0 +1,100 @@
+@media (max-width:1200px){
+}
+@media (max-width:1085px){
+    #trending .prod-container{
+        max-width: 31%;
+    }
+}
+@media (max-width:1024px){
+
+    #trending .prod-container{
+        max-width: 48%;
+    }
+    .header-thk h1{
+        font-size: 40px;
+        text-align: center; 
+    }
+    .card-thk{
+        text-align: center;
+    }
+    .shipping{
+        justify-content:center;
+    }
+
+}
+
+        @media (max-width:768px){
+            #trending .prod-container{
+                max-width: 100%;
+            }
+            .down-arrow{
+                display: none;
+            }
+            .main-text h1{
+                font-size: 50px;
+            }
+            .main-btn{
+                font-size: 15px;
+            }
+            .nav-icons{
+               display: none;  
+            }
+            .offcanvas-body{
+                background-color: #212529;
+            }
+            #pro-details .pro-img{
+                width: 100%;
+            }
+            #pro-details{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                width: 95%;
+            }
+            .pro-info{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+            }
+            .payment-form{
+                width: 100%;
+                display: inline-block;
+            }
+            .card-thk{
+                text-align: center;
+            }
+            
+            .card-thk img{
+                width: 50%;
+                margin-left: 20px;
+            }
+            .header-thk h1{
+                font-size: 40px;
+                text-align: center; 
+            }
+            .more-p{
+                text-align: center;
+                margin-bottom: 20px;
+        }
+    }
+
+@media (max-width:480px){
+    #trending .prod-container{
+        max-width: 100%;
+    }
+    .down-arrow{
+        display: none;
+    }
+    .main-btn{
+        font-size: 10px;
+    }
+    .main-text h1{
+        font-size: 45px;
+    }
+    .pro-img{
+        max-width: 100%;
+    }
+}

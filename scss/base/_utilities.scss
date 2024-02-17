@@ -1,0 +1,9 @@
+@mixin flexible($direction, $justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+nav{
+    @include flexible(flex, space-between, center);
+}

@@ -1,0 +1,24 @@
+.footer-content{
+    display: flex;
+    background-color: $n-f-bg;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    .info-container{
+        color: $bg-text-main;
+        max-width: 40%;
+        min-width: 250px;
+        margin: 30px;
+        a{
+            color: $bg-text-main;
+            text-decoration: none;
+        }
+    }
+    .logo-container img{
+        max-width: 100%;
+        padding: 20px;
+        padding-right: 40px;
+    }
+    
+}
+

@@ -1,0 +1,25 @@
+.header-thk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    i{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    img{
+        width: 300px;
+        border-radius: 20px;
+    }
+    p{
+        max-width: 50%;
+    }  
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }  
+}
+
