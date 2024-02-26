@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping cart</title>
+    <title>Interlude Clothing Store | Shopping cart.</title>
     <meta name="author" content="Joaquin Nathaniel Colman">
     <meta name="keywords" content="Clothing, shopping-cart, ecommerce, T-Shirt, html, css, sass, bootstrap">
-    <meta name="description" content="Interlude Clothing store">
+    <meta name="description" content="Interlude Clothing Store | Shopping cart.">
     <!-- css\styles.css -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- bootstrap -->
@@ -16,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,200;1,300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -53,152 +55,199 @@
     </header>
 
     <main class="container">
-          <h1 class="heading">Shopping cart <i class="bi bi-cart"></i></h1>
-        <div class="item-flex">
+
+      <h1 class="heading">Shopping cart <i class="bi bi-cart"></i></h1>
+
+      <div class="item-flex">
         <!-- checkout section -->
         <section class="checkout">
+
             <h2 class="checkout-heading">Payment Details</h2>
 
-              <div class="payment-form">
-                <div class="payment-method">
-                  <button class="method selected">
-                  <i class="bi bi-credit-card"></i>
+            <div class="payment-form">
 
-                  <span>Credit Card</span>
-                  <i class="bi bi-check-circle-fill"></i>
+                <div class="payment-method">
+
+                  <button class="method selected">
+
+                    <i class="bi bi-credit-card"></i>
+                    <span>Credit Card</span>
+                    <i class="bi bi-check-circle-fill"></i>
+
                   </button>
 
                   <button class="method">
-                  <i class="bi bi-paypal"></i>
 
-                  <span>Pay Pal</span>
-                  <i class="bi bi-check-circle"></i>
+                    <i class="bi bi-paypal"></i>
+                    <span>Pay Pal</span>
+                    <i class="bi bi-check-circle"></i>
+
                   </button>
-              </div>
-              <form action="#">
+                </div>
+
+                <form action="#">
 
                   <div class="cardholder-name">
+
                     <label for="cardholder-name" class="label-default">Cardholder name</abel>
+
                     <input type="text" id="cardholder-name" class="input-default">
+
                   </div>
 
                   <div class="card-number">
+
                     <label for="card-number" class="label-default">Card number</label>
+
                     <input type="tel" id="card-number" class="input-default">
+
                   </div>
 
-                  <div class="input-flex">               
+                  <div class="input-flex">   
+
                     <div class="expire-date">
-                      <label for="expire-date" class="label-default">Expiration date</label>
-                      <div class="input-flex">
-                        <input type="number" name="day" id="expire-date" class="input-default" placeholder="31" min="1" max="31">
+
+                        <label for="expire-date" class="label-default">Expiration date</label>
+
+                        <div class="input-flex">
+
+                            <input type="number" name="day" id="expire-date" class="input-default" placeholder="31" min="1" max="31">
                   
-                        <input type="number" name="month" id="expire-date" class="input-default" placeholder="12" min="1" max="12">
-                      </div> 
-                      </div>
-                    <div class="cvv">
-                    <label for="cvv" class="label-default">CVV</label>
-                      <div class="input-flex">
-                      <input type="tel" min="3" max="3" id="cvv" class="input-default">
-                      </div>
+                            <input type="number" name="month" id="expire-date" class="input-default" placeholder="12" min="1" max="12">
+
+                        </div> 
+
                     </div>
+
+                    <div class="cvv">
+
+                        <label for="cvv" class="label-default">CVV</label>
+
+                        <div class="input-flex">
+                          <input type="tel" min="3" max="3" id="cvv" class="input-default">
+                        </div>
+
+                    </div>
+
                   </div> 
+
                   <a href="shipping.html" class="p-a"><button class="btn btn-primary btn-lg btn-pay" type="submit"><b>Pay</b> $ <span>22.00</span></button></a>
-              </form>
-              </div>
+
+                </form>
+
+            </div>
+
         </section>
         
         <!-- cart section -->
         <section class="cart">
-          <div class="cart-item-box">
-          <h2 class="cart-heading">Order Summery</h2>
+            <div class="cart-item-box">
+              <h2 class="cart-heading">Order Summery</h2>
 
-            <div class="product-card">
-            <div class="card">
-            <div class="product-img">
-              <img src="../assets/images/shoeshine-p1.jpg" alt="Shoeshine T-shirt with blue and red print on the front" >
+              <div class="product-card">
+
+                <div class="card">
+
+                  <div class="product-img">
+                      <img src="../assets/images/shoeshine-p1.jpg" alt="Shoeshine T-shirt with blue and red print on the front" >
+                  </div>
+
+                  <div class="details">
+                      <h4>Shoeshine T-shirt</h4>
+                  </div>
+
+                  <div class="p-quantity">
+
+                      <input type="number" min="1" value="1" max="10">
+                      <div class="price">$ <span>22.00</span></div>
+
+                  </div>
+
+                  <div class="size">
+                      <select>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                      </select>
+                  </div>
+
+                  <div class="color">
+                      <select>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="beige">Beige</option>
+                      </select>
+                  </div>
+
+                  <div class="promo-code">
+                      <input type="text" placeholder="Enter promo code">
+                  </div>
+
+                  <div class="amount">
+                    <div class="subtotal">
+                        <span>Subtotal</span> $ <span>22.00</span>
+                    </div>
+
+                    <div class="tax">
+                        <span>Tax</span> $ <span>4,62</span>
+                    </div>
+
+                    <div class="shipping-txt">
+                        <span>Shipping</span> $ <span>0.00</span>
+                    </div>
+
+                    <div class="total">
+                        <span>Total</span> $ <span>26.62</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
-              <div class="details">
-              <h4>Shoeshine T-shirt</h4>
-              </div>
-              <div class="p-quantity">
-
-              <input type="number" min="1" value="1" max="10">
-
-              <div class="price">$ <span>22.00</span></div>
-              </div>
-              <div class="size">
-              <select>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-              </select>
-              </div>
-              <div class="color">
-              <select>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="beige">Beige</option>
-              </select>
-              </div>
-
-
-
-              <div class="promo-code">
-              <input type="text" placeholder="Enter promo code">
-              </div>
-
-              <div class="amount">
-              <div class="subtotal">
-                <span>Subtotal</span> $ <span>22.00</span>
-              </div>
-              <div class="tax">
-                <span>Tax</span> $ <span>4,62</span>
-              </div>
-              <div class="shipping-txt">
-                <span>Shipping</span> $ <span>0.00</span>
-              </div>
-              <div class="total">
-                <span>Total</span> $ <span>26.62</span>
-              </div>
-              </div>
-            </div>
-            </div>
-          </div>
         </section>
+
+      </div>
        
     </main>
 
     <footer>
-        <section class="footer-content">
-            <div class="logo-container">
-              <img src="../assets/images/interlude-logo100x100.png" alt="logo interlude white">
-            </div>
-            <acticle class="info-container">
-              <h4>Information</h4>
-              <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </acticle>
-            <acticle class="info-container">
-              <h4>Payment Methods</h4>
-              <ul>
-                <li><a href="#">Credit Card</a></li>
-                <li><a href="#">Paypal</a></li>
-                <li><a href="#">Pay whit Cash</a></li>
-              </ul>
-            </acticle>
-            <acticle class="info-container">
-              <h4>Social Media</h4>
-              <ul>
-                <li><a href="#">Intagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Email</a></li>
-              </ul>
-            </acticle>
-          </section>
+
+      <section class="footer-content">
+        <div class="logo-container">
+          <img src="./assets/images/interlude-logo100x100.png" alt="logo interlude white">
+        </div>
+
+        <acticle class="info-container">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </acticle>
+
+        <acticle class="info-container">
+          <h4>Payment Methods</h4>
+          <ul>
+            <li><a href="#">Credit Card</a></li>
+            <li><a href="#">Paypal</a></li>
+            <li><a href="#">Pay whit Cash</a></li>
+          </ul>
+        </acticle>
+
+        <acticle class="info-container">
+          <h4>Social Media</h4>
+          <ul>
+            <li><a href="#">Intagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </acticle>
+      </section>
+
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
