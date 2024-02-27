@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*border color main*/
 /*border radius main*/
 /*colours*/
@@ -394,11 +395,14 @@
 }
 
 .main-shipping {
+  display: flex;
   background: url(../assets/images/background2.jpg);
   object-fit: cover;
   height: 100%;
   width: 100%;
   background-position: center;
+  justify-content: center;
+  align-items: center;
 }
 .main-shipping .shipping {
   display: flex;
@@ -411,7 +415,6 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  margin-left: 35%;
 }
 .main-shipping .shipping .title-shp {
   font-size: 45px;
@@ -475,8 +478,17 @@
   #trending .prod-container {
     max-width: 31%;
   }
+  .nav-icons i {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
+  ¨ .nav-icons i {
+    display: none;
+  }
+  nav a {
+    font-size: 15px;
+  }
   #trending .prod-container {
     max-width: 48%;
   }
@@ -489,6 +501,7 @@
   }
   .main-shipping {
     background: none;
+    justify-content: center;
   }
   .main-shipping .shipping {
     border: none;

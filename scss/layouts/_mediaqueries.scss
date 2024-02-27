@@ -4,8 +4,17 @@
     #trending .prod-container{
         max-width: 31%;
     }
+    .nav-icons i{
+        display: none;
+    }
 }
-@media (max-width:1024px){
+@media (max-width:1024px){¨
+    .nav-icons i{
+        display: none;
+    }
+    nav a{
+        font-size: 15px;
+    }
 
     #trending .prod-container{
         max-width: 48%;
@@ -19,9 +28,10 @@
     }
     .main-shipping{
         background: none;
+        justify-content: center;
         .shipping{
             border: none;
-            width: 100%;
+            width: $d-w;
             align-items: center;
             .title-shp{
                 font-size: 30px;

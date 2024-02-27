@@ -1,9 +1,12 @@
 .main-shipping{
+    display: flex;
     background: url(../assets/images/background2.jpg);
     object-fit: cover;
     height: 100%;
-    width: $d-w;;
+    width: $d-w;
     background-position: center;
+    justify-content: center;
+    align-items: center;
     
     .shipping{
         display: flex;
@@ -16,7 +19,6 @@
         background-color: $bg-text-main;
         border-radius: 10px;
         padding: 20px ;
-        margin-left: 35%;
         .title-shp{
             font-size: 45px;
             i{
