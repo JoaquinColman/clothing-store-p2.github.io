@@ -562,17 +562,17 @@
     background-color: #212529;
   }
   #pro-details .pro-img {
-    width: 100%;
+    width: 70%;
   }
   #pro-details {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    width: 95%;
+    width: 90%;
   }
   .pro-info {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: left;
