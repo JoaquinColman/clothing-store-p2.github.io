@@ -134,7 +134,7 @@
   text-transform: capitalize;
   font-weight: 500;
 }
-.main-home h1 {
+.main-home h2 {
   color: #fff;
   font-size: 70px;
   font-weight: 600;
@@ -145,7 +145,7 @@
   font-weight: 500;
   font-style: italic;
 }
-.main-home h1, .main-home span, .main-home p, .main-home a {
+.main-home h2, .main-home span, .main-home p, .main-home a {
   margin-left: 15px;
 }
 
